@@ -1,0 +1,266 @@
+.title{
+    background-color: rgb(255,187,90);
+    padding:30px;
+    margin:30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.title>h1{
+    color:rgb(96,96,96);   
+}
+.title>p{
+    color:#f2de;
+    font-size: 20px;
+}
+/*COMMON CLASS*/
+.common{
+    background-color: #ddd;
+    padding: 30px;
+    margin:30px;
+    border:3px solid blue;
+}
+.cssOutline{
+    outline: 3px solid red;
+    border-radius: 10px; 
+}
+/*p3.html*/
+.cssOverflow{
+    text-align: justify;
+    line-height: 2;
+    border:2px solid #000;
+    padding:20px;
+    width:300px;
+    height:300px;
+    overflow:auto;
+}
+.cssOverflow>p:last-child{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*p4.html*/
+.cssWhiteSpace{
+    white-space:pre-wrap;
+}
+
+/*p5.html*/
+.cssUnits>h3:nth-child(1){
+    margin:0.5in; /*Inches- 1in is equal to 2.54cm*/
+}
+.cssUnits>h3:nth-child(2){
+    line-height:3cm;/*centimeters*/
+}
+.cssUnits>h3:nth-child(3){
+    word-spacing:4mm;/*millimeters*/
+}
+.cssUnits>h3:nth-child(4){
+    font-size:20pt;/*points*/
+}
+.cssUnits>h3:nth-child(5){
+    font-size:5pc;/*picas*/
+}
+.cssUnits>h3:nth-child(6){
+    font-size:12px;/*pixel*/
+}
+/*p6.html*/
+.cssVisibilityDisplay>.cssVisibility{
+    visibility:hidden;
+}
+.cssVisibilityDisplay>.cssDisplay{
+    display:none;
+}
+/*p7.html*/
+/*css WordWrap*/
+.cssWordWrap>p{
+    background-color: aqua;
+    padding:20px;
+    width:300px;
+    word-wrap:break-word;
+}
+/*css Resize*/
+.cssResize{
+    overflow: auto;
+    resize:both;
+}
+/*css Offset-Outline*/
+.cssOffsetOutline{
+    outline:3px solid red;
+    outline-offset: 10px;
+}
+/*css ColumnCount*/
+.cssColumnCount{
+    text-align: justify;
+    line-height: 2;
+    /* column-count: 4; */
+    column-gap: 50px;
+    column-rule: 2px solid yellow;
+    column-width: 200px;
+}
+/*p8.html*/
+.cssOpacity>p{
+    background-color:teal ;
+    color:#fff;
+    padding:30px;
+    opacity:0.5;
+}
+.cssOpacity>div{
+    background-color: rgba(255, 0, 0,0.6);
+    color:rgba(255, 255, 255,0.2);
+    padding:20px;
+}
+/*p9.html*/
+.cssAttribute>h1{
+    color: blue;
+}
+.cssAttribute>p{
+    color:violet;
+}
+.cssAttribute>[title]{
+    background-color: #fe6;
+}
+.cssAttribute>p[title]{
+    padding: 30px;
+}
+.cssAttribute>h1[title]{
+    font-size:50px;
+}
+.cssAttribute>p>abbr[id]{
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cssAttribute>form>[type]{
+    width:50%;
+    height:24px;
+    margin-bottom: 20px;
+}
+.cssAttribute>form>[type='text']{
+    border: 2px solid green;
+    border-radius: 5px;
+}
+.cssAttribute>form>[type='submit']{
+    background-color: brown;
+    border: 2px solid palegreen;
+}
+/*p10.html*/
+.cssPseudoClass>h1{
+    color:orange;
+}
+.cssPseudoClass>h1:hover{
+    color:green;
+}
+.cssPseudoClass>a:link{
+    color:#fff;
+}
+.cssPseudoClass>a:hover{
+    color:yellow;
+}
+.cssPseudoClass>a:active{
+    color:green;
+}
+.cssPseudoClass>a:visited{
+    color:red;
+}
+/*p11.html*/
+.cssPseudoElement>section:first-child::first-line,.cssPseudoElement>section:nth-child(2)::first-letter{
+    background-color: red;
+    color:#fff;
+}
+.cssPseudoElement>section:nth-child(2)::first-letter{
+    font-size:30px;
+    font-weight: bold;
+}
+.cssPseudoElement>section:last-child>h1::before{
+    content:"BEFORE H1";
+    background-color: yellow;
+    color:red;
+}
+.cssPseudoElement>section:last-child>h1::after{
+    content:"AFTER H1";
+    background-color: red;
+    color:yellow;
+}
+/*p12.html*/
+.cssPosition>h1:first-child,.cssPosition>div>h1:first-child{
+    background-color: teal;
+}
+.cssPosition>h1:nth-child(2),.cssPosition>div>h1:nth-child(2){
+    background-color: tomato;
+}
+.cssPosition>h1:nth-child(3),.cssPosition>div>h1:last-child{
+    background-color: violet;
+}
+.cssPosition h1{
+    padding:20px;
+    color:#fff;
+}
+.cssPosition>.second{
+    position:absolute; /*relative depends from the current position*/ /*absolute depends on the body*/
+    top:0px;
+    left:0px;
+}
+.cssPosition>div{
+     border:2px solid #000;
+     padding:20px;
+     position: relative;
+
+}
+.cssPosition>div>.fifth{
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+.cssPosition>.seven{
+    background-color: aqua;
+}
+.cssPosition>.eight{
+    background-color: crimson;
+    position:sticky;
+    top:0%;
+}
+.cssPosition>.nine{
+    background-color: black;
+    position: fixed;
+    top:45%;
+    right:0%;
+    border-radius: 5px;
+    transition:2s;
+}
+.cssPosition>.nine:hover{
+    right:2%;
+}
+/*p13.html*/
+.zIndex>section{
+    width:200px;
+    height:150px;
+    padding:20px;
+    color: #fff;
+    position:absolute;
+}
+.zIndex{
+    position:relative;
+    height: 300px;
+}
+.zIndex>.first{
+    background-color: #fe6;
+    top:10px;
+    left:10px;
+    z-index:1;
+}
+.zIndex>.second{
+    background-color: brown;
+    top:50px;
+    left:50px;
+    z-index: 2;
+}
+.zIndex>.third{
+    background-color:aqua ;
+    top:100px;
+    left:100px;
+    z-index: 3;
+}
+.zIndex>.first:hover{
+    z-index: 4;
+}
+.zIndex>.second:hover{
+    z-index: 4;
+}
